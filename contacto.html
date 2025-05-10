@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="contenedor">
+    <header>
+      <img src="img/logo.png" alt="logo">
+    </header>
+
+    <nav>
+      <ul class="barra">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre.html">Sobre el Banco</a>
+          <ul>
+            <li><a href="mision.html">Misión</a></li>
+            <li><a>Organización</a>
+              <ul>
+                <li><a href="https://www.bde.es/wbe/es/sobre-banco/transparencia/">Portal de Transparencia</a></li>
+                <li><a href="https://www.bde.es/wbe/es/sobre-banco/trabajar-banco/">Trabajar en el Banco</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="areas_actuacion.html">Areas de actuación</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="contacto">
+      <form action="">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos">
+
+        <label for="dni">Dni</label>
+        <input type="text" id="dni" name="dni">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono">
+
+        <label for="asunto">Asunto</label>
+        <input type="text" id="asunto" name="asunto">
+
+        <label for="mensaje">Mensaje</label>
+        <textarea rows="5" id="mensaje" name="mensaje"></textarea>
+        
+        <div class="boton">
+          <button type="submit">Enviar</button>
+        </div>
+
+      </form>
+    </div>
+    <footer class="final">
+      <img src="img/logo.png" alt="logo">
+      <a href="https://www.bde.es/wbe/es/pie/politica-privacidad/">Política de privacidad</a>
+      <a href="https://www.bde.es/wbe/es/pie/politica-cookies/">Política de cookies</a>
+      <a href="https://www.bde.es/wbe/es/pie/aviso-legal/">Aviso legal</a>
+      <a href="https://www.bde.es/wbe/es/pie/accesibilidad/">Accesibilidad</a>
+
+      <a href="https://www.linkedin.com/company/banco-de-espana/"><ion-icon name="logo-linkedin"></ion-icon></a>
+      <a href="https://www.youtube.com/user/bdeeuro"><ion-icon name="logo-youtube"></ion-icon></a>
+      <a href="https://www.flickr.com/photos/bde_fotos/"><ion-icon name="logo-flickr"></ion-icon></a>
+      <a href="https://www.instagram.com/bancodeespana/"><ion-icon name="logo-instagram"></ion-icon></a>
+    </footer>
+  </div>
+</body>
+</html>

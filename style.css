@@ -1,0 +1,237 @@
+:root {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav {
+  margin: 0;
+  background-color: grey;
+}
+.contenedor {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+.barra,.final,.derecha,.principal>section{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  gap: 40px;
+}
+
+ul {
+  list-style: none;
+}
+
+.barra li a {
+  color: azure;
+  text-decoration: none;
+  display: block;
+  padding: 10px 10px;
+  background-color: grey;
+}
+
+.barra li a:hover {
+  background-color: black; 
+}
+
+.barra > li {
+  float: left;
+}
+
+.barra li ul {
+  display: none;
+  position: absolute;
+  min-width: 150px;
+  
+}
+
+.barra li:hover > ul {
+  display: block;
+}
+
+.barra li ul li {
+  position: relative;
+}
+
+.barra li ul li ul{
+  right: -150px;
+  top: 15px
+}
+
+/* añadir imagen
+background-repeat: no-repeat;
+background-position: center;
+background-size: 100% 100%;
+background-attachment: fixed;
+*/
+.principal {
+  flex: 6;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.izquierda {
+ min-width: 60%;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+}
+.derecha {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.derecha>div {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+header img {
+  width: 300px;
+  margin-left: 150px;
+}
+
+.articulo {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 390px;
+  transition: transform 0.3s ease;
+  margin: 15px;
+  padding: 10px;
+  flex: 1 1 calc(50% - 20px); /* 2 en fila con espacio entre ellos */
+  box-sizing: border-box;
+}
+
+.articulo:hover {
+  transform: translateY(-5px);
+}
+
+.articulo img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.articulo-title {
+  padding: 20px;
+}
+
+.articulo-text {
+ margin-left: 20px;
+}
+
+.articulo-link {
+  display: block;
+  padding: 20px;
+  color: rgb(67, 101, 114);
+  text-decoration: none;
+
+}
+.articulo-link:hover {
+  text-decoration: underline;
+}
+
+.final a {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color: black;
+}
+
+.derecha p {
+  margin: 30px;
+}
+
+.banco {
+  margin: 20px 150px 0 150px;
+}
+
+.banco p {
+  margin: 20px 0 20px 0;
+}
+
+.banco a {
+  background-color: grey;
+  text-decoration: none;
+  color:white;
+  padding: 10px;
+  margin: 5px;
+}
+
+.banco h3 {
+  margin-bottom: 25px;
+}
+
+.fondo {
+  display: flex;
+  justify-content: center;
+}
+.fondo img {
+  width: 70vh;
+  margin: 5em;
+}
+
+.contacto {
+  max-width: 500px;
+  margin: auto;
+
+}
+.contacto label{
+  display: block;
+  padding: 10px;
+  font-size: 1.5em
+}
+
+.contacto input {
+  width: 400px;
+  height: 30px;
+}
+
+.contacto textarea {
+  width: 400px;
+  height: 100px;
+}
+
+.boton {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.areas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 60px 30px 60px;
+  align-items: center;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+}
+
+.areas img {
+  width: 60vh;
+}
+
+.areas h1 {
+  width: 30em;
+}
